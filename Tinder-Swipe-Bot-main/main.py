@@ -6,7 +6,7 @@ from time import sleep
 FB_EMAIL = "EMAIL ADDRESS USED TO LOG INTO FACEBOOK"
 FB_PASSWORD = "PASSWORD USED TO LOG INTO FACEBOOK"
 
-#To prevent chrome from shutting down
+#This is to prevent chrome from shutting down
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=chrome_options)
@@ -67,3 +67,4 @@ for n in range(100):
 
         except NoSuchElementException:
             sleep(2)
+
